@@ -2,13 +2,13 @@
 using System.Linq;
 using System.Reflection;
 using Microsoft.SharePoint;
+using Microsoft.SharePoint.Administration;
 using SPMeta2.Definitions;
 using SPMeta2.ModelHandlers;
 using SPMeta2.Services;
 using SPMeta2.SSOM.ModelHosts;
 using SPMeta2.Utils;
 using Microsoft.SharePoint.Utilities;
-using Microsoft.SharePoint.Administration;
 using SPMeta2.Common;
 
 namespace SPMeta2.SSOM.ModelHandlers
@@ -54,7 +54,7 @@ namespace SPMeta2.SSOM.ModelHandlers
             m_eventReceiversField.SetValue(site, null);
         }
 
-        private void DeploySite(WebApplicationModelHost webAppModelHost, Microsoft.SharePoint.Administration.SPWebApplication webApp, SiteDefinition siteModel)
+        private void DeploySite(WebApplicationModelHost webAppModelHost, SPWebApplication webApp, SiteDefinition siteModel)
         {
             var existingSite = GetExistingSite(webApp, siteModel);
 

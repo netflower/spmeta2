@@ -55,7 +55,7 @@ namespace SPMeta2.SSOM.DefaultSyntax
             {
                 case SPListTemplateType.Events:
                 case SPListTemplateType.Tasks:
-                case SPListTemplateType.TasksWithTimelineAndHierarchy:
+                //case SPListTemplateType.TasksWithTimelineAndHierarchy:
                 case SPListTemplateType.GenericList:
                 case SPListTemplateType.AdminTasks:
                 case SPListTemplateType.Agenda:

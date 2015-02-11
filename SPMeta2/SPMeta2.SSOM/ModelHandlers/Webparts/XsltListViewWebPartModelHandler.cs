@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
+//using System.Threading.Tasks;
 using System.Xml;
 using Microsoft.SharePoint;
 using Microsoft.SharePoint.Utilities;
@@ -56,7 +56,7 @@ namespace SPMeta2.SSOM.ModelHandlers.Webparts
                 list = web.Lists.TryGetList(typedModel.ListTitle);
 
 
-            typedWebpart.JSLink = typedModel.JSLink;
+            //SP13 typedWebpart.JSLink = typedModel.JSLink;
             typedWebpart.ListName = list.ID.ToString();
             typedWebpart.ListId = list.ID;
             typedWebpart.TitleUrl = list.DefaultViewUrl;

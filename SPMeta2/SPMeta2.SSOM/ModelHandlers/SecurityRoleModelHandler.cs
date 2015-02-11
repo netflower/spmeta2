@@ -1,6 +1,5 @@
 ﻿using System;
 using Microsoft.SharePoint;
-using Microsoft.SharePoint.ApplicationPages.Calendar.Exchange;
 using SPMeta2.Common;
 using SPMeta2.Definitions;
 using SPMeta2.Definitions.Base;
